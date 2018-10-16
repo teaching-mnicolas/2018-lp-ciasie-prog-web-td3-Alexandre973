@@ -17,7 +17,7 @@ describe ("Chain of prototypes", function() {
 
   it ("__proto__ of toto is Warrior.prototype", function() {
     expect(toto.__proto__).toBe(Warrior.prototype);
-    expect(toto.__proto__).toBe(Warrior.prototype);    // there is another name for this object
+    expect(toto.__proto__).toBe(warrior);    // there is another name for this object
   });
 
   it ("Character is the constructor of toto.__proto__", function() {
