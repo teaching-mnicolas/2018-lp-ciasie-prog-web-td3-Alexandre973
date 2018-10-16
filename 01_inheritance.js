@@ -14,7 +14,7 @@ describe ("Inheritance", function() {
   it ("function prototype has a constructor that is itself", function() {
     const Character = function() {};
     expect(Character.prototype.constructor).toBeDefined();
-    expect(Character.prototype.constructor).toBe();
+    expect(Character.prototype.constructor).toBe(Character);
   });
 
   it ("object is instance of its constructor", function() {
